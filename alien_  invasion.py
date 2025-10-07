@@ -1,7 +1,7 @@
 import sys 
 import pygame 
 from settings import Settings
-
+from ship import Ship
 
 
 def run_game():
@@ -11,6 +11,9 @@ def run_game():
     screen=pygame.display.set_mode(
         (game_settings.screen_width,  game_settings.screen_height))
     # screen=pygame.display.set_mode((1200,800))
+
+    #make a ship
+    ship = Ship(screen)
 
     
     pygame.display.set_caption("alian invation ")
@@ -33,7 +36,9 @@ def run_game():
 
 
         screen.fill(game_settings.bg_color)
-           # Make the most recently drawn screen visible.
+
+        # Make the most recently drawn screen visible.
+        ship.blitme()
         pygame.display.flip()        
 
 
