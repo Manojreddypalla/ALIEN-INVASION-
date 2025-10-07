@@ -1,0 +1,18 @@
+# Environment variables and sensitive files
+.env
+
+# Python virtual environment
+venv/
+
+# Compiled Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Project folders or build artifacts (optional)
+alien_invasion/
+
+# IDE settings (optional)
+.vscode/
+.idea/
