@@ -28,8 +28,9 @@ def run_game():
 #from here ok 
 
     while True :
-        gf.check_events()
+        gf.check_events(ship)
         # screen.fill(game_settings.bg_color)
+        ship.update()
 
         # # Make the most recently drawn screen visible.
         # ship.blitme()
